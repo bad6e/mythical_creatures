@@ -15,18 +15,4 @@ class MadLibTest < Minitest::Test
 
     assert_equal expected, result
   end
-
-  def test_it_can_create_a_different_mad_lib
-    skip
-    madlib = Madlib.new
-
-    madlib.noun("capybara")
-    madlib.verb("pet")
-    madlib.adjective("purple")
-    madlib.adverb("intensely")
-    result = madlib.result
-    expected = "Do you walk your blue dog quickly? That's hilarious!"
-
-    assert_equal expected, result
-  end
 end

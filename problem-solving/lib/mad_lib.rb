@@ -1,29 +1,28 @@
 class Madlib
 
+  attr_accessor :noun
 
+  def initialize
+
+  end
 
   def noun(word)
-    word
+    @noun = word
   end
 
-  def verb(verb)
-    verb
+  def verb(word)
+    @verb = word
   end
 
-  def adjective(adjective)
-    adjective
+  def adjective(word)
+    @adjective = word
   end
 
-  def adverb(adverb)
-    adverb
+  def adverb(word)
+    @adverb = word
   end
 
   def result
-    noun(word)
-
+    "Do you #{@verb} your #{@adjective} #{@noun} #{@adverb}? That's hilarious!"
   end
 end
-
-madlib = Madlib.new
-
-puts madlib.noun("dog")
